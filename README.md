@@ -79,8 +79,10 @@ bootstrapのインストールは手動だとなかなか大変だったよう�
 
 ### ＜app/views/layouts/application.html.erbの設定＞
 「app/views/layouts/application.html.erb」には下記2つを記述しております。
+
 <%= vite_client_tag %>
- <%= vite_javascript_tag 'application' %>
+
+<%= vite_javascript_tag 'application' %>
 
 vite用のcssの読み込みヘルパーで <%= vite_stylesheet_tag 'application' %> というものがあるようですが、
 cssはrailsに管理させているため <%= stylesheet_link_tag "application" %> としています。
