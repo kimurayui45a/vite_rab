@@ -2,7 +2,7 @@ ja:
   static_pages:
     top:
       title: トップページ
-      text: fabricラボ 〜居候のp5〜
+      text: vite_rab
       test: うーん？スタイルシート？
       logout: おいとまする
       vues: 恐怖！vueの襲撃！
