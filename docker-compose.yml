@@ -1,0 +1,36 @@
+version: '3.9'
+services:
+  db:
+    image: postgres
+    platform: linux/amd64
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+    environment:
+      TZ: Asia/Tokyo
+      POSTGRES_PASSWORD: password
+    ports:
+      - 5447:5432
+  web:
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 4000 -b '0.0.0.0'"
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/vite_rab
+      - bundle_data:/usr/local/bundle:cached
+      - node_modules:/app/node_modules
+    environment:
+      TZ: Asia/Tokyo
+      SELENIUM_DRIVER_URL: http://chrome:4444/wd/hub
+    ports:
+      - "4015:4000"
+    depends_on:
+      - db
+      - chrome
+  chrome:
+    image: seleniarm/standalone-chromium:latest
+    ports:
+      - 4458:4444
+volumes:
+  bundle_data:
+  node_modules:

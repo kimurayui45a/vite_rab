@@ -1,0 +1,32 @@
+ja:
+  static_pages:
+    top:
+      title: トップページ
+      text: fabricラボ 〜居候のp5〜
+      test: うーん？スタイルシート？
+      logout: おいとまする
+      vues: 恐怖！vueの襲撃！
+  vues:
+    index:
+      title: 恐怖！vueの襲撃！
+      top: 逃亡
+  footer:
+    title: フッター！
+  header:
+    title: ヘッダー！
+  users:
+    sessions:
+      new:
+        title: ログインしなさい
+    registrations:
+      new:
+        title: 新規登録
+        name: 名前
+        email: メールアドレス
+        password: パスワード：
+        characters: 文字です
+        password_confirmation: パスワード確認用
+        sign_in: 登録しなさい
+    shared:
+      links:
+        login: ログイン画面へ

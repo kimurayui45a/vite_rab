@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&family=Noto+Sans+JP:wght@100&display=swap');
+
+
+a {
+  text-decoration: none;
+}
+
+.try {
+  font-family: 'Dela Gothic One', sans-serif;
+  color: blue;
+}
+
+.try3 {
+  font-family: 'Mochiy Pop One', sans-serif;
+  color: blue;
+}
+
+.mochiy {
+  font-family: 'Mochiy Pop One', sans-serif;
+  color: red;
+  font-weight: 700;
+}
+
+.mochiy2 {
+  font-family: 'Mochiy Pop One', sans-serif;
+  color: greenyellow;
+  font-weight: 900;
+}
+
+.bd-highlight {
+  border: 1px solid orange;
+}
+
+.mazi-color {
+  background-color: blue;
+  color: white;
+}
+
+.pr-2 {
+  padding-right: 0.5rem !important;
+}
+
+.myCanvas {
+  border-width: 2px;
+  border-style: solid;
+  border-color: green;
+  display: block; /* ブロックレベル要素として表示 */
+  margin: auto; /* 水平方向の自動マージンで中央揃え */
+}

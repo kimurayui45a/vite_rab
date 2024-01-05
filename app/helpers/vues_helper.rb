@@ -1,0 +1,2 @@
+module VuesHelper
+end
